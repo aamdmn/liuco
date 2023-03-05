@@ -12,7 +12,10 @@ const Home: NextPage = () => {
   const [input, setInput] = useState("");
   const [generatedTexts, setGeneratedTexts] = useState<string>("");
 
-  const prompt = `Correct this to standard, professional English: ${input}`;
+  const prompt = `Create 3 name ideas that are easy to remember and easy to say for an e-commerce brand selling ${input} combining shortened related words in different languages and explain used words.
+  \n
+  Name: Holboo
+  Explanation: Combining the Dutch word for wood 'hout' and the English word 'boom'.`;
 
   const generate = async (e: any) => {
     e.preventDefault();
@@ -60,13 +63,13 @@ const Home: NextPage = () => {
     <Layout>
       <div className="flex flex-col justify-center items-center">
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900 dark:text-slate-100 text-center">
-          Correct your grammar in seconds
+          Create your brand name in seconds.
         </h1>
 
         <div className="max-w-xl w-full">
           <div className="flex mt-10 items-center space-x-3 justify-center">
             <p className="text-left  font-medium text-slate-900 dark:text-slate-100">
-              Input your text below and we&apos;ll correct it for you.
+              Input your product name here.
             </p>
           </div>
           <textarea
@@ -85,7 +88,7 @@ const Home: NextPage = () => {
                 className="bg-black rounded-xl text-white dark:bg-white dark:text-black font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80 w-1/3 mx-2"
                 onClick={(e) => generate(e)}
               >
-                Correct Grammar
+                Generate Name
               </button>
             </div>
           )}
@@ -110,14 +113,14 @@ const Home: NextPage = () => {
               {generatedTexts && (
                 <>
                   <h2 className="sm:text-4xl text-3xl font-bold text-slate-900 dark:text-slate-100 mx-auto text-center">
-                    Here&apos;s your corrected text.
+                    Here&apos;s your brand name.
                   </h2>
                   <div className="space-y-8 flex flex-col items-center justify-center max-w-xl mx-auto">
                     <div
                       className="bg-white dark:bg-black rounded-xl shadow-md p-4 hover:bg-gray-100 transition cursor-copy border"
                       onClick={() => {
                         navigator.clipboard.writeText(generatedTexts);
-                        toast("Bio copied to clipboard", {
+                        toast("Name copied to clipboard", {
                           icon: "✂️",
                         });
                       }}

@@ -6,7 +6,7 @@ if (!process.env.OPENAI_API_KEY) {
 }
 
 export const config = {
-  runtime: "edge",
+  runtime: "experimental-edge",
 };
 
 const handler = async (req: NextRequest): Promise<Response> => {
@@ -22,7 +22,7 @@ const handler = async (req: NextRequest): Promise<Response> => {
     model: "text-davinci-003",
     prompt,
     temperature: 0,
-    max_tokens: 60,
+    max_tokens: 150,
     top_p: 1,
     frequency_penalty: 0,
     presence_penalty: 0,

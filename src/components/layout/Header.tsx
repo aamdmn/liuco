@@ -51,17 +51,16 @@ export default function Header() {
     <>
       <SignInModal />
       <header
-        className={`header px-2 top-0 left-0 z-40 flex w-full justify-center items-center bg-transparent ${
-          sticky
-            ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
-            : "absolute"
-        }`}
+        className={`header px-2 top-0 left-0 z-40 flex w-full justify-center items-center bg-transparent ${sticky
+          ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
+          : "absolute"
+          }`}
       >
         <div className="container relative -mx-4 h-20 flex w-full items-center justify-between">
           <div className="w-full px-2 lg:ml-16 xl:mr-12">
             <Link href="/">
               <h1 className="text-lg font-bold text-black dark:text-white">
-                An AI Startup
+                Liuco
               </h1>
             </Link>
           </div>
@@ -75,28 +74,24 @@ export default function Header() {
                 className="absolute right-0 top-1/2 block translate-y-[-50%] rounded-lg  ml-6 px-2 py-[6px]  hover:ring-2 ring-gray-300 lg:hidden"
               >
                 <span
-                  className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
-                    navbarOpen ? " top-[7px] rotate-45" : " "
-                  }`}
+                  className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${navbarOpen ? " top-[7px] rotate-45" : " "
+                    }`}
                 />
                 <span
-                  className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
-                    navbarOpen ? "opacity-0 " : " "
-                  }`}
+                  className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${navbarOpen ? "opacity-0 " : " "
+                    }`}
                 />
                 <span
-                  className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
-                    navbarOpen ? " top-[-8px] -rotate-45" : " "
-                  }`}
+                  className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${navbarOpen ? " top-[-8px] -rotate-45" : " "
+                    }`}
                 />
               </button>
               <nav
                 id="navbarCollapse"
-                className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white py-4 px-6 duration-300 dark:border-body-color/20 dark:bg-black lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
-                  navbarOpen
-                    ? "visibility top-full opacity-100"
-                    : "invisible top-[120%] opacity-0"
-                }`}
+                className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white py-4 px-6 duration-300 dark:border-body-color/20 dark:bg-black lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
+                  ? "visibility top-full opacity-100"
+                  : "invisible top-[120%] opacity-0"
+                  }`}
               >
                 <ul className="block lg:flex lg:space-x-12">
                   {menuData.map((menuItem, index) => (
@@ -125,9 +120,8 @@ export default function Header() {
                             </span>
                           </a>
                           <div
-                            className={`submenu relative top-full left-0 rounded-md bg-white transition-[top] duration-300 group-hover:opacity-100 dark:bg-black lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
-                              openIndex === index ? "block" : "hidden"
-                            }`}
+                            className={`submenu relative top-full left-0 rounded-md bg-white transition-[top] duration-300 group-hover:opacity-100 dark:bg-black lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${openIndex === index ? "block" : "hidden"
+                              }`}
                           >
                             {menuItem?.submenu?.map((submenuItem) => (
                               <>
@@ -165,7 +159,7 @@ export default function Header() {
                   <UserDropdown />
                 )}
               </AnimatePresence>
-              <ThemeToggler />
+              {/* <ThemeToggler /> */}
             </div>
           </div>
         </div>

@@ -26,12 +26,6 @@ const menuData: MenuDataProps[] = [
         path: "/prompt2image",
         newTab: false,
       },
-      {
-        id: 32,
-        title: "Age Progression",
-        path: "/transform",
-        newTab: false,
-      },
     ],
   },
   {
