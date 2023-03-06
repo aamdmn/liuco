@@ -3,8 +3,8 @@ import Head from "next/head";
 const DOMAIN = "https://ai-project-three.vercel.app";
 
 export default function Meta({
-  title = "An AI Startup",
-  description = "This is an AI startup that you can use to generate image, fix grammar and restore image.",
+  title = "Liuco",
+  description = "An Ecommerce helping tool powered by AI",
   image = `${DOMAIN}/api/og`,
 }: {
   title?: string;
@@ -28,7 +28,7 @@ export default function Meta({
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@vercel" />
-      <meta name="twitter:creator" content="@steventey" />
+      <meta name="twitter:creator" content="@aamdmn" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
