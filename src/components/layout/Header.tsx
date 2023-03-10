@@ -51,28 +51,28 @@ export default function Header() {
   return (
     <>
       <SignInModal />
-      <div className={clsx("sticky top-0 inset-x-0 z-50 group", {
+      <div className={clsx("sticky top-0 inset-x-0 z-50 group w-full", {
         "!fixed": isHome,
       })}>
         <header
           className={clsx(
-            "relative h-24 px-8 mx-auto transition-colors bg-transparent border-b border-transparent duration-200 group-hover:bg-gray-900 !bg-opacity-50 group-hover:border-0",
+            "relative h-24 px-8 mx-auto transition-colors bg-transparent border-b border-transparent duration-200 group-hover:bg-transparent !bg-opacity-50 group-hover:border-0",
             {
-              "!bg-gray-900 !bg-opacity-50 !border-0": !isHome || isScrolled,
+              "!bg-transparent !bg-opacity-50 !border-0": !isHome || isScrolled,
             }
           )}
         >
           <div className="relative h-full flex items-center justify-between">
             <div className="lg:ml-16 xl:mr-12">
-              <Link href="/">
-                <div className="relative h-28 w-28 lg:h-32 lg:w-32">
-                  <Image src="/images/brand/logo-text.svg" alt="liuco logo" fill className="object-fill" />
-                </div>
-              </Link>
+              <div className="relative h-28 w-28 lg:h-32 lg:w-32">
+                <Link href="/">
+                  <Image src="/images/brand/logo-text.svg" alt="liuco logo" fill className="object-scale-down" />
+                </Link>
+              </div>
             </div>
 
             <div className="flex justify p-0 m-0 lg:pr-0 items-center lg:ml-16 xl:mr-12">
-              <Link href={'/signin'} className={'font-satoshiL text-white rounded-3xl bg-red border-2 border-red px-7 py-3 hover:bg-transparent duration-200'}>
+              <Link href={'/signin'} className={'font-satoshiL text-white rounded-3xl bg-red border-2 border-red px-7 py-3 hover:bg-black duration-200'}>
                 <div className="flex items-center relative">
                   Get Started
                   <div className="relative h-5 w-5 ml-1 items-center justify-center">
