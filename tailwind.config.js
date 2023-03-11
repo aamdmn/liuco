@@ -26,7 +26,7 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 20s linear infinite',
-        'spin-2slow': 'spin 30s revert infinite',
+        'spin-xslow': 'spin 30s linear infinite',
       },
     },
   },
