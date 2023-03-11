@@ -7,7 +7,7 @@ interface Props {
 const CircleLarge = ({ width, height, slow }: Props) => {
     return (
         <svg
-            className={`animate-spin-${slow == true ? "x" : ""}slow`}
+            className={`animate-spin-slow`}
             width={width || "466"}
             height={height || "466"}
             viewBox="0 0 466 466"
