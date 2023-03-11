@@ -1,10 +1,9 @@
 interface Props {
     width?: string;
     height?: string;
-    slow?: boolean;
 }
 
-const CircleLarge = ({ width, height, slow }: Props) => {
+const CircleLarge = ({ width, height }: Props) => {
     return (
         <svg
             className={`animate-spin-slow`}

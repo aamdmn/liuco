@@ -42,7 +42,7 @@ export default function Header() {
   return (
     <>
       {/* <SignInModal /> */}
-      <div className={clsx("fixed top-0 inset-x-0 z-50 group w-full")}>
+      <div className={clsx("fixed top-0 inset-x-0 z-[9999] group w-full")}>
         <header
           className={clsx(
             "relative bg-transparent"
