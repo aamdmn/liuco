@@ -1,5 +1,6 @@
 import GetStartedButton from "../common/GetStartedButton";
 import HalfCircle from "../graphics/HalfCircle";
+import HalfCircleTwo from "../graphics/HalfCircleTwo";
 import HalfCirclePoint from "../graphics/HalfCirclePoint";
 import { motion } from "framer-motion";
 
@@ -10,7 +11,7 @@ export default function Points() {
                 <motion.h1
                     initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
                     className="text-3xl md:text-4xl font-satoshiM leading-10 max-w-5xl"
                 >Our cutting-edge AI technology powers tools designed to help you maximize sales and customer satisfaction.</motion.h1>
                 <div className="absolute md:block md:relative opacity-20 md:opacity-100 w-full md:w-fit -z-20">
@@ -25,7 +26,7 @@ export default function Points() {
                     className="text-3xl md:text-4xl font-satoshiM leading-10 max-w-5xl w-full"
                     initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.5 }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
                 >
                     Liuco is <span className="text-red">easy to use</span>, <span className="text-red">cost-effective</span>, and requires <span className="text-red">no technical expertise</span>. Start boosting your e-commerce results.</motion.h1>
             </section>
@@ -47,7 +48,7 @@ export default function Points() {
                     </motion.div>
                 </div>
                 <div className="absolute md:block md:relative opacity-20 md:opacity-100 w-full md:w-fit -z-20">
-                    <HalfCircle />
+                    <HalfCircleTwo />
                 </div>
             </section>
         </div>

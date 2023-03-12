@@ -43,7 +43,10 @@ export default function Header() {
     <>
       {/* <SignInModal /> */}
       <div className={clsx("fixed top-0 inset-x-0 z-[9999] group w-full")}>
-        <header
+        <motion.header
+          initial={{ y: -100 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
           className={clsx(
             "relative bg-transparent"
           )}
@@ -87,7 +90,7 @@ export default function Header() {
                 </div>
               </div> */}
           </div>
-        </header>
+        </motion.header>
       </div >
     </>
   );
