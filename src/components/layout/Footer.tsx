@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <footer className="w-full h-[87vh] flex text-white overflow-hidden">
       <div className="w-full lg:w-[92%] bg-black h-full m-0 p-0 flex flex-col md:flex-row">
-        <div className="grid w-full md:text-lg grid-rows-1 gap-28 grid-cols-2 md:grid-cols-1 mt-28 mb-16 mx-auto items-center ">
+        <div className="grid w-full md:text-lg grid-rows-1 gap-28 grid-cols-2 md:grid-cols-1 md:mb-16 mt-28 mx-auto items-center ">
           <div className="md:justify-self-center justify-self-center md:w-28">
             <Link href={''} className='hover:text-red duration-150 mb-2'>Sign In</Link>
             <p>info@liuco.com</p>
