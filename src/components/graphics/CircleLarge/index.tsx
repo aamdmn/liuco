@@ -13,7 +13,7 @@ const CircleLarge = ({ width, height }: Props) => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <circle cx="233" cy="233" r="231.5" stroke="#EDF2F4" stroke-width="3" stroke-dasharray="20 20" />
+            <circle cx="233" cy="233" r="231.5" stroke="#EDF2F4" stroke-width="3" strokeDasharray="20 20" />
         </svg>
     )
 }
