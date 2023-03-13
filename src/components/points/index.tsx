@@ -14,12 +14,12 @@ export default function Points() {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     className="text-3xl md:text-4xl font-satoshiM leading-10 max-w-5xl"
                 >Our cutting-edge AI technology powers tools designed to help you maximize sales and customer satisfaction.</motion.h1>
-                <div className="absolute md:block md:relative opacity-20 md:opacity-100 w-full md:w-fit -z-20">
+                <div className="absolute md:block md:relative opacity-20 md:opacity-100 w-full md:w-fit z-0">
                     <HalfCircle />
                 </div>
             </section>
             <section className="p-10 my-72 md:my-36 flex items-center justify-center">
-                <div className="absolute md:block md:mb-64 mb-10 md:relative opacity-20 md:opacity-100 -z-20">
+                <div className="absolute md:block md:mb-64 mb-10 md:relative opacity-20 md:opacity-100 z-0">
                     <HalfCirclePoint />
                 </div>
                 <motion.h1
@@ -42,12 +42,12 @@ export default function Points() {
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.5 }}
-                        className="mt-16"
+                        className="mt-16 relative z-20"
                     >
                         <GetStartedButton />
                     </motion.div>
                 </div>
-                <div className="absolute md:block md:relative opacity-20 md:opacity-100 w-full md:w-fit -z-20">
+                <div className="absolute md:block md:relative opacity-20 md:opacity-100 w-full md:w-fit z-0">
                     <HalfCircleTwo />
                 </div>
             </section>

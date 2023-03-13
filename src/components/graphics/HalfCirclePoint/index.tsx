@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 function Icon() {
 
     const { ref, inView } = useInView({
-        threshold: 0.1,
+        threshold: 0.2,
     });
 
     const controls = useAnimation();

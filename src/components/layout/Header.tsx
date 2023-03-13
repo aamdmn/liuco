@@ -61,7 +61,7 @@ export default function Header() {
               </Link>
             </div>
 
-            <Link href={'/signin'} className={'font-satoshiL text-white rounded-3xl bg-red border-2 border-red px-7 py-3 hover:bg-black duration-200'}>
+            <Link href={'/waitlist'} className={'font-satoshiL text-white rounded-3xl bg-red border-2 border-red px-7 py-3 hover:bg-black duration-200'}>
               <div className="flex items-center relative">
                 Get Started
                 <div className="relative h-5 w-5 ml-1 items-center justify-center">
