@@ -52,7 +52,7 @@ export default function EmailForm() {
                 className="w-full md:w-1/2 h-full bg-white border border-gray-400 rounded-xl p-3 mb-5 md:mb-0"
             />
             {loading ? (
-                <button type="button" className="px-10 py-4 bg-red rounded-xl text-white ml-0 md:ml-5">
+                <button type="button" className="px-10 py-4 bg-red rounded-xl text-white ml-0 md:ml-5 flex justify-center">
                     <svg
                         className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
                         xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ export default function EmailForm() {
                 </button>
             )
                 : (
-                    <button type="submit" className="px-10 py-4 bg-red rounded-xl text-white ml-0 md:ml-5">Submit</button>
+                    <button type="submit" className="px-10 py-4 bg-red rounded-xl text-white ml-0 md:ml-5 flex justify-center">Submit</button>
                 )}
         </form>
     )
