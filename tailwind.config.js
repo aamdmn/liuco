@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        black: '#14151F',
         white: '#EDF2F4',
+        black: '#14151F',
         darkBlue: '#2B2D42',
         red: '#D90429',
         lightRed: '#EF233',
@@ -26,7 +26,6 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 20s linear infinite',
-        'spin-2slow': 'spin 30s revert infinite',
       },
     },
   },

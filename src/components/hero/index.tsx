@@ -1,48 +1,55 @@
-import Image from "next/image";
-import Link from "next/link";
 import GetStartedButton from "../common/GetStartedButton";
+import CircleLarge from "../graphics/CircleLarge";
+import { motion } from "framer-motion";
+
 
 const Hero = () => {
   return (
     <div className="bg-black text-white w-full">
-      <section
-        className="h-[80vh] overflow-hidden w-full relative grid md:flex justify-center items-center gap-6 py-8 md:py-12 lg:py-36 felx-wrap  mt-24 fadeInUp mx-auto text-center"
-        data-wow-delay=".2s"
-      >
-        <div className="lg:flex w-full items-center">
-          <div className="md:w-1/2 lg:h-full">
-            <div className="block lg:flex flex-col w-full items-center justify-center">
-              <div className="items-left">
-                <div className="flex flex-col items-left max-w-[40rem]">
-                  <h1 className="mb-5 text-4xl text-left font-satoshiM leading-tight text-white md:text-7xl md:leading-tight">
-                    Create <span className="underline text-red">Ecommerce</span><br />The Better Way
-                  </h1>
-                  <p className="text-left">Save time and don&apos;t get frusrated thinking about every step</p>
-                </div>
-                <div className="max-w-[35rem] relative items-left flex justify-start mt-10">
-                  <GetStartedButton />
-                </div>
-              </div>
-            </div>
-            <div>
-
-            </div>
+      <section className="h-[85vh] overflow-hidden w-full relative mt-28 md:mt-28 md:flex md:justify-center">
+        <div className="flex flex-col items-center justify-center text-center w-full h-3/4 md:h-full md:text-left md:items-center">
+          <div className="md:flex md:flex-col md:max-w-[38rem] md:mb-20 md:mr-20 z-50">
+            <motion.h1
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="text-4xl md:text-5xl lg:text-7xl font-bold"
+            >
+              Create <span className="text-red underline underline-offset-4 md:decoration-4 decoration-2">Ecommerce</span>
+              <br />
+              The Better Way
+            </motion.h1>
+            <motion.h1
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.9 }}
+              className="text-md md:text-lg mt-6"
+            >Without getting frustrated thinking about every step.</motion.h1>
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 1.3 }}
+              className="mt-14 flex justify-center md:justify-start"
+            >
+              <GetStartedButton />
+            </motion.div>
           </div>
-          <div className="z-0 md:w-1/2 opacity-50 absolute md:relative left-[2%] overflow-hidden top-[25%]">
-            <div className="lg:relative w-[23rem] h-[25rem] md:h-[33rem] md:w-[35rem] ">
-              <Image src={'/images/hero-image.svg'} alt='hero image' fill className="object-fill " />
-            </div>
+        </div>
+        <div className="md:hidden opacity-20 md:opacity-100 w-full flex justify-center -z-50 md:z-0 md:relative">
+          <div className="absolute top-5">
+            <CircleLarge width="400" height="400" />
           </div>
-          {/* <div className="z-0 md:w-1/2 opacity-50 absolute md:relative left-[2%] overflow-hidden top-[25%]">
-            <div className="lg:relative w-[23rem] h-[25rem] md:h-[33rem] md:w-[35rem]">
-              <Image src={'/images/large-circle.svg'} alt='hero image' fill className="object-fill animate-spin-2slow" />
-            </div>
+          <div className="absolute top-72 md:left-48 opacity-50">
+            <CircleLarge height="250" width="250" />
           </div>
-          <div className="z-0 md:w-1/2 opacity-50 absolute md:relative left-[2%] overflow-hidden top-[25%]">
-            <div className="lg:relative w-[20rem] h-[20rem] md:h-[20rem] md:w-[20rem] ">
-              <Image src={'/images/small-circle.svg'} alt='hero image' fill className="object-fill animate-spin-slow" />
-            </div>
-          </div> */}
+        </div>
+        <div className="hidden opacity-20 md:opacity-100 w-3/5 md:flex justify-center -z-50 md:z-0 md:relative mr-20">
+          <div className="absolute top-5">
+            <CircleLarge width="450" height="450" />
+          </div>
+          <div className="absolute top-72 md:left-24 opacity-50">
+            <CircleLarge height="300" width="300" />
+          </div>
         </div>
       </section >
     </div >

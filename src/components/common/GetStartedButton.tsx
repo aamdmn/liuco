@@ -1,19 +1,15 @@
-import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { text } from "node:stream/consumers";
 
-interface Props {
-    textColor?: string;
-}
 
-export default function GetStartedButton({ textColor }: Props) {
+export default function GetStartedButton() {
 
     return (
-        <Link href={'/signin'} className={`${!textColor ? 'text-white' : `text-${textColor}`} rounded-3xl bg-red px-14 py-4 flex items-center border-2 border-red hover:bg-black duration-150 `}>
-            Get Started
-            <div className="relative h-5 w-5 ml-1 items-center justify-center">
-                <Image src={'/icons/arrow-up-right.svg'} alt="arrow up right" fill />
-            </div>
-        </Link>
+        <div className="w-fit">
+            <Link href={'/waitlist'} className={"flex items-center px-7 py-4 bg-red border-red border-2 rounded-3xl hover:bg-black duration-200 md:px-12 text-white"}>
+                <span className="text-lg">Get Started</span>
+                <ArrowUpRight />
+            </Link>
+        </div>
     )
 }
